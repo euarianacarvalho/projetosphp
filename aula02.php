@@ -7,8 +7,23 @@
     <title>Document</title>
 </head>
 <body>
+    <h1> Aula 3</h1>
+    <p><?php echo "este é um código php" ?></p>
+    <p><?= 'Esse é um código php com short tag!' ?></p>
+    <p>
+        A soma de 1+1= <?=1+1?> <br>
+        <?="Texto \n <br> Texto"?>
+    </p>
+    <br><br><br>
+
+    <h1>Aula 3</h1>
     <?php
-        echo "este é um código php"
+    for ($i=10; $i >= 1; $i--):
     ?>
+        <p>Texto</p>
+    <?php
+    endfor;
+    ?>
+
 </body>
 </html>
