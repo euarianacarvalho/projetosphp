@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho 1 - Formulário PHP</title>
+</head>
+<body>
+    <form action="resultado.php" method="post">
+        <h2>Dados pessoais</h2>
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome"><br><br>
+        <label for="email">E-mail:</label>
+        <input type="email" name="email"><br><br>
+        <label for="genero">Gênero:</label>
+        <input type="radio" name="sexo" value="Feminino"> Feminino 
+        <input type="radio" name="sexo" value="Masculino"> Masculino 
+        <input type="radio" name="sexo" value="Prefiro não informar"> Prefiro Não informar<br><br>
+
+        <h2>Endereço</h2>
+        <label for="endereco">Endereço Completo:</label>
+        <input type="text" name="endereco"> <br><br>
+        
+
+        <h2>Dados Profissionais</h2>
+        <label for="profissao">Profissão:</label>
+        <select name="profissao">
+            <option value="Engenheiro de Software">Engenheiro de Software</option>
+            <option value="Analista de Segurança de Informação">Analista de Segurança de Informação</option>
+            <option value="Analista de Sistemas">Analista de Sistemas</option>
+            <option value="Administrador de Sistemas">Administrador de Sistemas</option>
+            <option value="Administrador do banco de dados (DBA)">Administrador do banco de dados (DBA)</option>
+            <option value="Gestor de tecnologias da informação">Gestor de tecnologias da informação</option>
+            <option value="Arquiteto de redes">Arquiteto de redes</option>
+            <option value="Desenvolvedor">Desenvolvedor</option>
+        </select><br><br>
+        <label for="areaInteresse">Área de Interesse:</label>
+        <input type="checkbox" name="interesse" value="Banco de dados">Banco de dados
+        <input type="checkbox" name="interesse" value="Engenharia de software">Engenharia de software
+        <input type="checkbox" name="interesse" value="Redes de computadores">Redes de computadores
+        <input type="checkbox" name="interesse" value="Desenvolvimento de jogos">Desenvolvimento de jogos
+        <input type="checkbox" name="interesse" value="Programação back-end">Programação back-end
+        <input type="checkbox" name="interesse" value="Programação front-end">Programação front-end
+        <input type="checkbox" name="interesse" value="Mineração de dados">Mineração de dados <br><br>
+
+        <h2>Fale Conosco</h2>
+        <label for="mensagem">Escreva Sua Mensagem:</label>
+        <input type="text" name="mensagem"><br><br>
+        <label for="promocoes">Deseja Receber Nossas Promoções?</label>
+        <input type="checkbox" name="promocoes" value="sim">Sim <br><br>
+
+        <h2>Senha</h2>
+        <label for="senha">Digite Sua Senha:</label>
+        <input type="password" name="senha"><br><br>
+        <label for="confSenha">Confirme Sua Senha:</label>
+        <input type="password" name="confSenha"><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
